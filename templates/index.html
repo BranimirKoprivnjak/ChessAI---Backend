@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ChessAI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"></link>
+  </head>
+  <body>
+    <div class='container'>
+      <h2 class='tutorial'>
+        Hello and welcome! You will be testing your skills against Minimax algorithm.
+        Either enter your own move in the input field or let Stockfish engine decide it for you.
+        You're white, good luck!
+      </h2>
+      <img src="/board" class="board"></img>
+      <p class="message">{{message|safe}}</p>
+      <div class="toolbar">
+        <div class="section">
+          <form action="/move/">
+            <div class="input">
+              <div data-tip="e.g. d2d4 where d2 is current piece position and d4 is desired position">
+                <input name="move" type="text" placeholder="e.g. d2d4"/>
+              </div>
+              <button type="submit" class="game">Make Move</button>
+            </div>
+          </form>
+        </div>
+        <div class="section">
+          <form action="/engine/">
+            <button type="submit" class="game">Stockfish Move</button>
+          </form>
+        </div>
+        <form action="/game/" class="space">
+          <button type="submit" class="game">New Game</button>
+        </form>
+        <form action="/undo/">
+          <button type="submit" class="undo">Undo</button>
+        </form>
+      <div>
+    <div>
+</html>
