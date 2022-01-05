@@ -23,7 +23,7 @@ To get this project up and running you should start by having Python and pip ins
 pip install virtualenv
 ```
 
-Clone or download this repo and create your virtual environment
+Clone or download this repo, cd into the folder and create your virtual environment
 
 ```
 python -m venv venv
