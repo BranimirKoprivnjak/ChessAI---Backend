@@ -1,19 +1,14 @@
 # Introduction
 
-Hey everyone, I've built a chess AI based on Minimax algorithm (Negamax implementation) & Alpha-beta pruning optimization. Minimax tries to find most optimal move for a player,
-assuming that our opponent also plays optimally. Its a backtracking based algorithm, its tries all possible moves for given depth and then backtracks and makes a decision 
-which is based on some heuristic evaluation of the leaf nodes.
-
-For the smartness of our engine, we are using initial moves from a book of past openings done by many Grandmasters.
-
-Also, Stockfish, famous chess engine is implemented and can be tested versus our engine.
+Hey everyone, this is the backend for the ChessAI project (https://github.com/BranimirKoprivnjak/ChessAI).
+It offers some extra funcionalities such as implementation of Stockfish and for the overall smartness of our engine,
+initial moves from the book of past openings done by many Grandmasters.
 
 ### Technology used
 Python&Flask
 
 ### Libraries
 python-chess, sys
-
 
 ## Installation
 
